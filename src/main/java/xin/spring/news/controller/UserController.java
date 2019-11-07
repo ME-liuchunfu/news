@@ -16,7 +16,6 @@ import java.util.List;
  * 用户管理
  */
 @Controller
-@CrossOrigin( origins = "*")
 @RequestMapping("/user/")
 public class UserController {
 
@@ -32,7 +31,7 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("save")
-    public R save(@RequestParam User user){
+    public R save(User user){
         user.setCreateTime(new Date());
         userService.save(user);
         return R.ok(user);
