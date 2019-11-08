@@ -37,4 +37,13 @@ public class PageController {
         return "redirect:/index";
     }
 
+    /**
+     * 后台管理
+     * @return
+     */
+    @RequestMapping("manage")
+    public String manage(){
+        return "manage/manage";
+    }
+
 }

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
-    <title>ME | Blog</title>
+    <title>登录-新闻发布及管理系统</title>
 	<jsp:include page="/WEB-INF/include/head.jsp"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/jsAndCss/css/bootstrap-meblog-register.css" />
 </head>
@@ -34,8 +34,8 @@
 						  <input type="password" class="form-control password" name="password" placeholder="password" aria-describedby="sizing-addon2">
 						</div>
 						<div class="input-group text-center me-btn-all">
-							<input type="submit" class="form-control me-btn" value="注册"/>
-							<input type="reset" class="form-control me-btn" value="重置"/>
+							<input type="submit" class="form-control me-btn" value="登录"/>
+							<input type="reset" class="form-control me-btn" value="清空"/>
 						</div>
 					</form>
 				</div>

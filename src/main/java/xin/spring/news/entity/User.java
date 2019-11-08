@@ -24,7 +24,7 @@ public class User implements Serializable {
      *   `password` varchar(100) DEFAULT NULL COMMENT '密码',
      *   `email` varchar(100) DEFAULT NULL COMMENT '邮箱',
      *   `mobile` varchar(100) DEFAULT NULL COMMENT '手机号',
-     *   `status` tinyint(4) DEFAULT NULL COMMENT '状态  0：禁用   1：正常',
+     *   `status` tinyint(4) DEFAULT NULL COMMENT '状态  0：管理员   1：普通用户',
      *   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
      */
 

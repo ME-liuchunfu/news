@@ -39,7 +39,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         User one = getWrapperUserInfo(user);
         if(one != null){
             if(one.getPassword().equals(user.getPassword())){
-                request.getSession().setAttribute(Contrant.SESSION_USER_KEY, user);
+                request.getSession().setAttribute(Contrant.SESSION_USER_KEY, one);
                 return "redirect:/index";
             }else{
                 request.setAttribute("msg", "账号密码不正确");

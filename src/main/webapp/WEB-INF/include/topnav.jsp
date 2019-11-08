@@ -32,7 +32,9 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
                                 <li><a href="#"><span class="glyphicon glyphicon-edit"></span>个人信息</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span>我的收藏</a></li>
+                                <c:if test="${sessionScope.SESSION_USER_KEY.status eq 0}">
+                                    <li><a href="${pageContext.request.contextPath}/manage"><span class="glyphicon glyphicon-heart-empty"></span>后台管理</a></li>
+                                </c:if>
                                 <li><a href="${pageContext.request.contextPath}/logout"><sapn class="glyphicon glyphicon-off"></sapn>退出</a></li>
                             </ul>
                         </li>
