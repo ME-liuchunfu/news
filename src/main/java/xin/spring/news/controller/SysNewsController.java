@@ -1,18 +1,15 @@
 package xin.spring.news.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import xin.spring.news.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 /**
  * 新闻信息管理控制器
  */
 @RequestMapping("/news/")
-public class NewsController extends ManageController {
+public class SysNewsController extends ManageController {
 
 
     @RequestMapping("list")

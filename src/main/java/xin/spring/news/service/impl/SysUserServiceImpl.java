@@ -3,21 +3,21 @@ package xin.spring.news.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import xin.spring.news.entity.User;
-import xin.spring.news.mapper.UserMapper;
-import xin.spring.news.service.IUserService;
+import xin.spring.news.entity.SysUser;
+import xin.spring.news.mapper.SysUserMapper;
+import xin.spring.news.service.ISysUserService;
 import xin.spring.news.utils.Contrant;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 
     @Override
-    public String register(User user, HttpServletRequest request) {
+    public String register(SysUser user, HttpServletRequest request) {
         // 校验是否存在
-        User one = getWrapperUserInfo(user);
+        SysUser one = getWrapperUserInfo(user);
         if(one != null){
             request.setAttribute("msg", "用户名: " + user.getUsername() + " 存在,不可用。");
             return "register";
@@ -34,9 +34,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     }
 
     @Override
-    public String login(User user, HttpServletRequest request) {
+    public String login(SysUser user, HttpServletRequest request) {
         // 校验是否存在
-        User one = getWrapperUserInfo(user);
+        SysUser one = getWrapperUserInfo(user);
         if(one != null){
             if(one.getPassword().equals(user.getPassword())){
                 request.getSession().setAttribute(Contrant.SESSION_USER_KEY, one);
@@ -51,9 +51,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
     }
 
-    private User getWrapperUserInfo(User user) {
-        QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
-        queryWrapper.lambda().eq(User::getUsername, user.getUsername());
+    private SysUser getWrapperUserInfo(SysUser user) {
+        QueryWrapper<SysUser> queryWrapper = new QueryWrapper<SysUser>();
+        queryWrapper.lambda().eq(SysUser::getUsername, user.getUsername());
         return this.getOne(queryWrapper);
     }
 

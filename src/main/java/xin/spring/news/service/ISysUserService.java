@@ -1,11 +1,11 @@
 package xin.spring.news.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import xin.spring.news.entity.User;
+import xin.spring.news.entity.SysUser;
 
 import javax.servlet.http.HttpServletRequest;
 
-public interface IUserService extends IService<User>{
+public interface ISysUserService extends IService<SysUser>{
 
     /**
      * 注册
@@ -13,7 +13,7 @@ public interface IUserService extends IService<User>{
      * @param request
      * @return
      */
-    String register(User user, HttpServletRequest request);
+    String register(SysUser user, HttpServletRequest request);
 
     /**
      * 登录
@@ -21,6 +21,6 @@ public interface IUserService extends IService<User>{
      * @param request
      * @return
      */
-    String login(User user, HttpServletRequest request);
+    String login(SysUser user, HttpServletRequest request);
 
 }
