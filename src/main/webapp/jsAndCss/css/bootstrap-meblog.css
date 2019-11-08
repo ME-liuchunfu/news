@@ -1,0 +1,249 @@
+@charset "utf-8";
+/*---ME-Blog V1.0---*/
+
+/*scroll*/
+::-webkit-scrollbar{width:8px;height:6px;background:#eee;}
+::-webkit-scrollbar-button{background-color:#eee;}
+::-webkit-scrollbar-track{background:#eee;}
+::-webkit-scrollbar-track-piece{background:#eee}
+::-webkit-scrollbar-thumb{background:#aaaaaa;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-scrollbar-resizer{background:#FF0BEE;}
+scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+
+scrollbarbutton{display:none !important;}
+
+scrollbar[orient="vertical"]{min-width:8px !important;}
+/*scroll*/
+
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+    padding-top: 50px;
+}
+.font-s12{font-size: 12px;color: #666;}
+.img-on{
+	width: 100%;
+    overflow: hidden;
+}
+.p-user{
+	font-size: 12px;
+	color: #666;
+}
+.title-main{
+	margin-top: 5px;
+    color: #555;
+    font-size: 12px;
+    line-height: 12px;
+    height: 48px;
+    overflow: hidden;
+}
+.more{
+	background: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+    height: 30px;
+}
+.more .btn.btn-default {
+    padding: 0px !important;
+    border-color: #06aaff;
+    color:#09a2ffab;
+}
+.text-a{
+	text-decoration: none !important;
+}
+.lvjing{
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+@keyframes runUp{
+	from{top:0;}
+	to{top:-20px;}
+}
+@keyframes topUp{
+	from{top:0;}
+	to{top:-3px;}
+}
+.col-md-3{
+	margin: 15px 0;
+}
+.me-top{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #06aaff;
+	transition: 1s;
+}
+.me-right{
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	width: 1px;
+	height: 0;
+	background: #06aaff;
+	transition: 1s;
+}
+.me-bottom{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	width: 0;
+	height: 1px;
+	background: #06aaff;
+	transition: 1s;
+}
+.me-left{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 1px;
+	height: 0;
+	background: #06aaff;
+	transition: 1s;
+}
+.me-box{
+	position: relative;	
+}
+.me-box:hover .me-top , .me-box:hover .me-bottom{
+	width: 100%;
+}
+.me-box:hover .me-right , .me-box:hover .me-left{
+	height: 100%;
+}
+.all-item{
+	position: relative;
+	width: 100%;
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+}
+.all-item:hover{
+    box-shadow: 0 0 2px 1px #06aaff;
+    animation: topUp 1s 1 forwards;
+}
+.item-bg-box {
+    padding: 20px;
+    overflow: hidden;
+}
+.all-item .item-bg-box img{
+	margin: auto;
+	vertical-align: top;
+	transition: 1s;
+	border: 0;
+}
+.all-item:hover .item-bg-box img{
+	transform: scale(1.1);
+}
+/*单独样式*/
+.row .col-md-12 h2{
+	color: rgba(0,0,0,0.5);
+    margin-top: 0;
+	text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-default .navbar-brand{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.navbar-default .navbar-brand h1{
+	margin-left: 10px !important;
+	font-size: 26px;
+    height: 60px;
+    line-height: 50px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-weight: bold;
+}
+.navbar-default .navbar-brand h1:hover{
+	color: #06aaff;	
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #06aaff;	
+}
+#banner{
+	position: relative;
+	width: 100%;
+	/*height: 500px;*/
+	background: url(../img/app-banner.jpg);
+	background-size: cover;
+}
+#banner .col-md-12 {
+    padding: 0;
+}
+
+#banner .col-md-12 .text-center {
+    font-size: 20px;
+    margin-top: 160px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+#banner .col-md-12 .icon-btn{
+	margin-top: 120px;
+	text-align: center;
+}
+#banner .col-md-12 .icon-btn span{
+	position: relative;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    animation: runUp 1s infinite;
+}
+#ontop{
+	padding: 50px 0;
+}
+
+#article{
+	/*background: rgba(0,0,0,0.1);*/
+    padding: 40px 0;
+    margin-top: -40px;
+}
+.btn-primary{
+    color: #06aaff;
+    background-color: #fff;
+    border-color: #06aaff;
+    transition: 0.5s;
+}
+#ay-btn{
+	margin-top: -20px;
+}
+.btn-primary:hover{
+	color: #FFF;
+	background-color: rgba(6,170,255,0.5);
+	border-color: #06aaff;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
+}
+
+#footer{
+	margin-top: 20px;
+}
+.goUP{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+}
+.goUP span{
+	width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #01aaff;
+    animation: runUp 1s infinite;
+}

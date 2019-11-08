@@ -19,13 +19,6 @@ public class CustomerController {
 	@Autowired
 	private ICustomerService iCustomerService;
 	
-	@ResponseBody
-	@RequestMapping("/index")
-	public Object list(){
-		List<Customer> list = iCustomerService.list();
-		return list;
-	}
-	
 	//通过客户id查询客户信息
 	@RequestMapping(value="/findCustomerById/{id}")
 	public String findCustomerById(@PathVariable Integer id, Model model){

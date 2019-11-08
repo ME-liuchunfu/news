@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*---ME-Blog V1.0---*/
+
+/*scroll*/
+::-webkit-scrollbar{width:8px;height:6px;background:#eee;}
+::-webkit-scrollbar-button{background-color:#eee;}
+::-webkit-scrollbar-track{background:#eee;}
+::-webkit-scrollbar-track-piece{background:#eee}
+::-webkit-scrollbar-thumb{background:#aaaaaa;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-scrollbar-resizer{background:#FF0BEE;}
+scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+
+scrollbarbutton{display:none !important;}
+
+scrollbar[orient="vertical"]{min-width:8px !important;}
+/*scroll*/
+
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+    padding-top: 50px;
+}
+.font-s12{font-size: 12px;color: #666;}
+.img-on{
+	width: 100%;
+    overflow: hidden;
+}
+.p-user{
+	font-size: 12px;
+	color: #666;
+}
+.title-main{
+	margin-top: 5px;
+    color: #555;
+    font-size: 12px;
+    line-height: 12px;
+    height: 48px;
+    overflow: hidden;
+}
+.lvjing{
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+@keyframes runUp{
+	from{top:0;}
+	to{top:-20px;}
+}
+@keyframes topUp{
+	from{top:0;}
+	to{top:-3px;}
+}
+/*单独样式*/
+.me-top{
+	height: 50px;
+	overflow: hidden;
+}
+
+.me-top a.nav{
+    font-size: 26px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+}
+.me-top h1{
+	padding: 0;
+	margin: 0;
+}
+.me-top h1 .nav:hover{
+	color: #06aaff;
+}
+.col-sm-6 .text-right{
+	margin: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #888;
+}
+.navbar-default {
+    box-shadow: 0 0 1px 1px #666;
+}
+.input-group {
+    margin: 20px 0;
+}
+span.me-form-icon {
+    background: #fff;
+}
+.me-btn-all{
+    width: 100%;
+}
+.me-btn-all .me-btn{
+	width: 100px;
+	margin: auto;
+}
+.me-btn-all .me-btn:hover{
+	background: #01AAFF;
+	color: #fff;
+}
+.me-btn[type='submit']{
+	float: left;
+}
+.me-btn[type='reset']{
+	float: right;
+}
+#footer{
+	margin-top: 20px;
+}
+.goUP{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+}
+.goUP span{
+	width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #01aaff;
+    animation: runUp 1s infinite;
+}

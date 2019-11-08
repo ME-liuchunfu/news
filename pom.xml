@@ -18,9 +18,25 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <spring.version>4.3.6.RELEASE</spring.version>
+    <jstl.jstl.version>1.2</jstl.jstl.version>
+    <taglibs.standard.version>1.1.2</taglibs.standard.version>
   </properties>
 
   <dependencies>
+
+    <!-- JSTL标签库 -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>${jstl.jstl.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${taglibs.standard.version}</version>
+    </dependency>
+    <!-- end -->
+
     <!-- Junit -->
     <dependency>
       <groupId>junit</groupId>
