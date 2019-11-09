@@ -123,7 +123,7 @@
 								html += '<blockquote class="blockquote-reverse">';
 								html +=	'<p>'+data.data.content+'</p>';
 								html += '<footer>评论时间：'+data.data.time+'评论来自：<cite title="'+ ${ not empty sessionScope.SESSION_USER_KEY ? sessionScope.SESSION_USER_KEY.username : "'***'" } + '"></cite>'
-										+${ not empty sessionScope.SESSION_USER_KEY ? "'".concat(sessionScope.SESSION_USER_KEY.username).concat("'") : "***"} + '</footer>';
+										+${ not empty sessionScope.SESSION_USER_KEY ? "'".concat(sessionScope.SESSION_USER_KEY.username).concat("'") : "'***'"} + '</footer>';
 								html += '</blockquote>';
 								$("#comments-box").prepend(html);
 								$("textarea[name='content']").empty();
