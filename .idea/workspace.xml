@@ -8,56 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8dbfdc0-1af1-4791-9c22-68a0d91f749e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mvc/springmvc-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xin/spring/news/filter/HeaderFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xin/spring/news/utils/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/mvc/springmvc-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/xin/spring/news/filter/HeaderFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/classes/xin/spring/news/utils/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/ant-1.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/ant-launcher-1.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/aspectjweaver-1.8.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/cglib-3.2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/commons-dbcp2-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/jackson-annotations-2.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/jackson-core-2.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/jackson-databind-2.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/javassist-3.21.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/jsqlparser-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-plus-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-plus-annotation-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-plus-core-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-plus-extension-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mybatis-spring-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/mysql-connector-java-5.1.40.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-aspects-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/manage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="67" />
+            <state relative-caret-position="175">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/include/topnav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="-53">
               <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
             </state>
           </provider>
@@ -125,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/new_see.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="108" column="72" lean-forward="true" selection-start-line="108" selection-start-column="72" selection-end-line="108" selection-end-column="72" />
+            <state relative-caret-position="550">
+              <caret line="124" column="200" selection-start-line="124" selection-start-column="200" selection-end-line="124" selection-end-column="200" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -198,10 +148,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/comments/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/xin/spring/news/controller/SysCommentsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/spring/news/controller/PageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/manage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/new_see.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/include/topnav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/new_see.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/manage.jsp" />
       </list>
     </option>
   </component>
@@ -267,11 +217,6 @@
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,14 +379,29 @@
       <option name="project" value="LOCAL" />
       <updated>1573292118503</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update ok">
+      <created>1573292343289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573292343289</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update ok">
+      <created>1573292604650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573292604650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20958000" />
+    <option name="totallyTimeSpent" value="21666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -449,7 +409,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49921507" visible="true" weight="0.195629" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49921507" visible="true" weight="0.195629" />
       <window_info id="Structure" order="7" sideWeight="0.50078493" side_tool="true" weight="0.16791044" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32909605" />
       <window_info anchor="bottom" id="Spring" />
@@ -462,7 +422,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.18980478" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.43492407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -670,13 +630,6 @@
     <entry file="file://$PROJECT_DIR$/target/news/jsAndCss/img/contact-bg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xin/spring/news/controller/SysCommentsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -714,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/new_see.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="108" column="72" lean-forward="true" selection-start-line="108" selection-start-column="72" selection-end-line="108" selection-end-column="72" />
+        <state relative-caret-position="550">
+          <caret line="124" column="200" selection-start-line="124" selection-start-column="200" selection-end-line="124" selection-end-column="200" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -728,8 +681,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/include/topnav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="-53">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/manage/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
