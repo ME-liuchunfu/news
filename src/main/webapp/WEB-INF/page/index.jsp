@@ -1,6 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="/WEB-INF/include/tag.jsp"/>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -31,333 +31,87 @@
 	</section>
 	<!--banner-->
 	<!--ontop-->
-	<section id="ontop" class="wow fadeInUp">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="text-center">置顶文章</h2>
+	<c:if test="${not empty hotNews}">
+		<section id="ontop" class="wow fadeInUp">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-center">置顶文章</h2>
+					</div>
+					<c:forEach items="${hotNews}" var="item">
+						<article class="col-md-3">
+							<a class="text-a" href="${pageContext.request.contextPath}/news/see/${item.id}" target="_blank">
+								<div class="all-item me-box">
+									<span class="me-top"></span>
+									<span class="me-right"></span>
+									<span class="me-bottom"></span>
+									<span class="me-left"></span>
+									<div class="item-bg-box">
+										<div class="img-on">
+											<img width="100%" src="${item.picUrl}" class="img-responsive"/>
+										</div>
+										<h3 class="font-s12">${item.title}</h3>
+										<div class="p-user">
+											<span class="glyphicon glyphicon-user"></span>&nbsp;${item.author}
+											<span class="glyphicon glyphicon-time"></span>
+											<time><fmt:formatDate value="${ item.publishTime}" pattern="yyyy-MM-dd HH:mm:ss" /></time>
+										</div>
+										<p class="title-main">${ item.content.length() > 60 ? item.content.substring(0,60) : item.content }</p>
+										<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
+									</div>
+								</div>
+							</a>
+						</article>
+					</c:forEach>
 				</div>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
 			</div>
-		</div>
-	</section>
+		</section>
+	</c:if>
 	<!--ontop-->
 	<!--article-->
-	<section id="article" class="wow fadeInUp">
-		<div class="container">
-			<div class="row article-new-box">
-				<div class="col-md-12">
-					<h2 class="text-center">文章新区</h2>
+	<c:if test="${not empty otherNews}">
+		<section id="article" class="wow fadeInUp">
+			<div class="container">
+				<div class="row article-new-box">
+					<div class="col-md-12">
+						<h2 class="text-center">文章新区</h2>
+					</div>
+					<c:forEach items="${otherNews}" var="item">
+						<article class="col-md-3">
+							<a class="text-a" href="${pageContext.request.contextPath}/news/see/${item.id}" target="_blank">
+								<div class="all-item me-box">
+									<span class="me-top"></span>
+									<span class="me-right"></span>
+									<span class="me-bottom"></span>
+									<span class="me-left"></span>
+									<div class="item-bg-box">
+										<div class="img-on">
+											<img width="100%" src="${item.picUrl}" class="img-responsive"/>
+										</div>
+										<h3 class="font-s12">${item.title}</h3>
+										<div class="p-user">
+											<span class="glyphicon glyphicon-user"></span>&nbsp;${item.author}
+											<span class="glyphicon glyphicon-time"></span>
+											<time><fmt:formatDate value="${ item.publishTime}" pattern="yyyy-MM-dd HH:mm:ss" /></time>
+										</div>
+										<p class="title-main">${ item.content.length() > 60 ? item.content.substring(0,60) : item.content }</p>
+										<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
+									</div>
+								</div>
+							</a>
+						</article>
+					</c:forEach>
 				</div>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="col-md-3">
-					<a class="text-a" href="#">
-						<div class="all-item me-box">
-							<span class="me-top"></span>
-							<span class="me-right"></span>
-							<span class="me-bottom"></span>
-							<span class="me-left"></span>
-							<div class="item-bg-box">
-								<div class="img-on">
-									<img width="100%" height="170" src="${pageContext.request.contextPath}/jsAndCss/img/Bootstrap.jpg" class="img-responsive"/>
-								</div>
-								<h3 class="font-s12">折腾我的blog</h3>
-								<div class="p-user">
-									<span class="glyphicon glyphicon-user"></span>&nbsp;admin&nbsp;
-									<span class="glyphicon glyphicon-time"></span>
-									<time>2018-03-09 20:48:32</time>
-								</div>
-								<p class="title-main">
-									一台将要报废的电脑，一路折腾，更换主板、CPU、内存、电源...变成了重新组装的电脑，对装机也是有了一定的了解，中间遇见一堆奇葩的问题。 机箱也是换了好几个，只不过都是自己做的纸箱子，就是不喜欢铁壳子的箱子，一直都是裸奔或者纸箱子。
-								</p>
-								<div class="more"><span class="btn btn-default">阅读详情&gt;&gt;</span></div>
-							</div>
-						</div>
-					</a>
-				</article>
 			</div>
-		</div>
-	</section>
+		</section>
+	</c:if>
 	<!--article-->
 	<!--加载按钮-->
-	<section id="ay-btn">
+	<section id="ay-btn" style="display: none;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<button class="java-btn btn btn-primary wow fadeInUp">加载更多</button>
+					<button  class="java-btn btn btn-primary wow fadeInUp">加载更多</button>
 				</div>
 			</div>
 		</div>

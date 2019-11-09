@@ -67,4 +67,13 @@ public class SysCommentsController extends ManageController{
         return R.ok();
     }
 
+    @ResponseBody
+    @RequestMapping("comment")
+    public R comment(SysComments sysComments){
+        sysComments.setUserId(getUserId());
+        sysComments.setTime(new Date());
+        boolean save = sysCommentsService.save(sysComments);
+        return save ? R.ok(sysComments) : R.error();
+    }
+
 }
