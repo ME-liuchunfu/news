@@ -18,7 +18,7 @@
                     <input type="text" class="form-control" name="key" id="name" placeholder="请输入用户名">
                 </div>
                 <input type="submit" class="btn btn-default" value="搜索"/>
-                &nbsp;&nbsp;&nbsp;${not empty list ? "检索到数据：".concat(list.size()).concat("条") : ""}
+                &nbsp;&nbsp;&nbsp;${not empty list ? "检索到数据：<span id='totle'>".concat(list.size()).concat("</span>条") : ""}
                 <button type="button" class="btn btn-info" onclick="template.openOrClose(true, '新增管理员用户');">添加用户</button>
             </form>
         </caption>
@@ -303,6 +303,7 @@
                         if(data.code == 200){
                             this.tip('删除成功。', 's');
                             $(target).parents("tr").remove();
+                            $("#totle").text($.trim($("#totle").text())/1 -1);
                         }else{
                             this.tip('删除失败。', 'd');
                         }
