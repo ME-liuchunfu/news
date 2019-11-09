@@ -42,4 +42,10 @@ public class SysComments implements Serializable {
     @TableField(value = "time")
     private Date time;
 
+    @TableField(exist = false)
+    private SysNews sysNews;
+
+    @TableField(exist = false)
+    private SysUser sysUser;
+
 }

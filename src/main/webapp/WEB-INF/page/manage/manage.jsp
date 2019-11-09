@@ -23,7 +23,7 @@
                 <ul class="submenu">
                     <li><a href="${pageContext.request.contextPath}/user/list" target="iframe">用户信息管理</a></li>
                     <li><a href="${pageContext.request.contextPath}/news/list" target="iframe">新闻信息管理</a></li>
-                    <li><a href="#">CSS</a></li>
+                    <li><a href="${pageContext.request.contextPath}/comments/list" target="iframe">评论信息管理</a></li>
                     <li><a href="#">Maquetacion web</a></li>
                 </ul>
             </li>
